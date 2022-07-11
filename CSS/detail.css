@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: "Font Japan";
+    src: url('../font/To\ Japan.ttf');
+    }
+
+.Japan {
+    font-family: "Font Japan";
 }
 body{
     font-size: 16px;
@@ -253,4 +257,14 @@ a.text-lightred:hover {
 }
 .card-body{
     box-shadow: 1px 3px 15px black;
+}
+span{
+    color: #fff;
+}
+p{
+    color: #00E67B;
+    text-shadow: 1px 1px 1px #f7f7f7;
+}
+h1{
+    text-shadow: 1px 1px 1px #00E67B;
 }

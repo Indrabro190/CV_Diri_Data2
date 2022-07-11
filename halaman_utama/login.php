@@ -34,6 +34,9 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
  
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
  
@@ -54,7 +57,7 @@ if (isset($_POST['submit'])) {
                 <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
             </div>
             <div class="input-group">
-                <button name="submit" class="btn">Login</button>
+                <button name="submit" class="custom-btn-2 btn-9-2">Login</button>
             </div>
             <p class="login-register-text">Anda belum punya akun? <a href="registrasi.php">Register</a></p>
         </form>

@@ -17,12 +17,12 @@ $pendidikan = query("SELECT id_pendidikan,riwayat_pendidikan,nama_pendidikan FRO
 if (isset($_POST['ubah'])) {
   if (ubah($_POST, $id) > 0) {
     echo "<script>
-             alert('data berhasil diubah');
+             alert('data berhasil diubah1');
              document.location.href = 'coba.php';
             </script>";
   } else {
     echo "<script>
-    alert('data gagal diubah');
+    alert('data berhasil dirubah2');
     document.location.href = 'coba.php';
    </script>";
   }
@@ -81,7 +81,7 @@ if (isset($_POST['ubah'])) {
 
       <div class="profile">
         <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" style="height: 120px;">
-        <h1 class="text-light"><a href="coba.php">Indrabro190</a></h1>
+        <h1 class="Japan" contenteditable="true"><a href="coba.php">Ubah Data</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -98,351 +98,178 @@ if (isset($_POST['ubah'])) {
       </nav>.
       <!--nav-menu -->
     </div>
-  </header>End Header -->
+  </header>
+  <!-- End Header -->
 
 
 
   <main id="main">
 
-    <body style="padding-left: 100px; background-color:aquamarine;">
+    <body style="background-color:aquamarine;">
       <!-- Ukuran tabel -->
-      <div class="col-xl-11">
+      <div class="col-xl-12">
         <!-- End ukuran tabel -->
 
         <!-- Account details card-->
         <div class="card mb-4" id="1" style="box-shadow: 1px 2px 5px black;">
-          <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Data-Diri</div>
+          <div class="card-header" style="color:#fff ; background-color:#8E6AEB; font-weight: 900; padding-left:45%;">Data-Diri</div>
           <div class="card-body" style="background-color:#34495e;">
             <form class="row g-3" action="" method="POST">
               <div class="row gx-3 mb-3">
                 <!-- Tabel Data Diri -->
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Masukkan Nama :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Nama" required value="<?= $m['Nama']; ?>">
-
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Masukkan Nama :</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Nama" required value="<?= $m['Nama']; ?>">
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Tempat :</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Tempat" required value="<?= $m['Tempat']; ?>">
+                  </div>
                 </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Tempat :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Tempat" required value="<?= $m['Tempat']; ?>">
-
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Tanggal lahir</label>
+                    <input type="date" class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Tgl_lahir" required value="<?= $m['Tgl_lahir']; ?>">
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Jenis Kelamin</label>
+                    <select class="form-select" style="background-color: #bdc3c7; padding:8px;" name="Jenis_Kelamin" id="validationTooltip04" required>
+                      <option selected disabled value="<?= $m['Jenis_Kelamin']; ?>">Pilih</option>
+                      <option style="font-size: 12px;" <?= $m['Jenis_Kelamin'] == 'Laki-laki' ? 'selected' : ''; ?>>Laki-laki</option>
+                      <option style="font-size: 12px;" <?= $m['Jenis_Kelamin'] == 'Perempuan' ?  'selected' : ''; ?>>Perempuan</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Tgl lahir :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Tgl_lahir" required value="<?= $m['Tgl_lahir']; ?>">
-
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Gol Darah</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Gol_Darah" required value="<?= $m['Gol_Darah']; ?>">
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Alamat</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Alamat" required value="<?= $m['Alamat']; ?>">
+                  </div>
                 </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Jenis Kelamin :</label>
-                  <select class="form-select" style="background-color: #bdc3c7;" name="Jenis_Kelamin" id="validationTooltip04" required>
-                    <option selected disabled value="<?= $m['Jenis_Kelamin']; ?>">Pilih</option>
-                    <option <?= $m['Jenis_Kelamin'] == 'Laki-laki' ? 'selected' : ''; ?>>Laki-laki</option>
-                    <option <?= $m['Jenis_Kelamin'] == 'Perempuan' ?  'selected' : ''; ?>>Perempuan</option>
-                  </select>
-
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">RT/RW</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="RT_RW" required value="<?= $m['RT_RW']; ?>">
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Kel/Desa</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Kel_Desa" required value="<?= $m['Kel_Desa']; ?>">
+                  </div>
                 </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Gol Darah :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Gol_Darah" value="<?= $m['Gol_Darah']; ?>">
-
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Kecamatan</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Kecamatan" required value="<?= $m['Kecamatan']; ?>">
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Agama</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Agama" required value="<?= $m['Agama']; ?>">
+                  </div>
                 </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Alamat :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Alamat" required value="<?= $m['Alamat']; ?>">
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Status_Perkawinan</label>
+                    <select class="form-select" style="background-color: #bdc3c7; padding:8px;" name="Status_Perkawinan" id="validationTooltip04" required>
+                      <option selected disabled value="<?= $m['Status_Perkawinan']; ?>">Pilih</option>
+                      <option style="font-size: 12px;" <?= $m['Status_Perkawinan'] == 'Nikah' ? 'selected' : ''; ?>>Nikah</option>
+                      <option style="font-size: 12px;" <?= $m['Status_Perkawinan'] == 'Belum Nikah' ? 'selected' : ''; ?>>Belum Nikah</option>
+                    </select>
 
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Pekerjaan</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Pekerjaan" required value="<?= $m['Pekerjaan']; ?>">
+                  </div>
                 </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">RT/RW :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="RT_RW" required value="<?= $m['RT_RW']; ?>">
-
+                <div class="row">
+                  <div class="col-6" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Kewarganegaraan</label>
+                    <input class="form-control" style="background-color: #bdc3c7; display:flex; justify-content:center; align-items:center;" name="Kewarganegaraan" required value="<?= $m['Kewarganegaraan']; ?>">
+                  </div>
                 </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Kel/Desa :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Kel_Desa" required value="<?= $m['Kel_Desa']; ?>">
-
-                </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Kecamatan :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Kecamatan" required value="<?= $m['Kecamatan']; ?>">
-
-                </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Agama :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Agama" required value="<?= $m['Agama']; ?>">
-
-                </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Status Perkawinan :</label>
-                  <select class="form-select" style="background-color: #bdc3c7;" name="Status_Perkawinan" id="validationTooltip04" required>
-                    <option selected disabled value="<?= $m['Status_Perkawinan']; ?>">Pilih</option>
-                    <option <?= $m['Status_Perkawinan'] == 'Nikah' ? 'selected' : ''; ?>>Nikah</option>
-                    <option <?= $m['Status_Perkawinan'] == 'Belum Nikah' ? 'selected' : ''; ?>>Belum Nikah</option>
-                  </select>
-
-                </div>
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Pekerjaan :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Pekerjaan" required value="<?= $m['Pekerjaan']; ?>">
-
-                </div>
-              </div>
-
-              <div class="row gx-3 mb-3">
-                <div class="col-md-5" style="margin-left: 30px;">
-                  <label class="small mb-1" style="font-weight: 900;">Kewarganegaraan :</label>
-                  <input class="form-control" style="background-color: #bdc3c7;" name="Kewarganegaraan" required value="<?= $m['Kewarganegaraan']; ?>">
-
-                </div>
-                <br><br><br><br><br><br><br><br>
-
-              </div>
 
 
-              <!-- Tabel keahlian -->
-              <!-- Ukuran tabel -->
-              
+
+
+
+                <br><br><br><br><br><br>
+
+
+
+                <!-- Tabel keahlian -->
+                <!-- Ukuran tabel -->
+
                 <!-- End ukuran tabel -->
 
                 <!-- Account card-->
-                
-                  <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Keahlian</div>
-                  
-                    <!-- <form action="" method="POST"> -->
-                    <!-- <div class="control-group after-add-more col-4">
-                      <label>Nama Keahlian</label>
-                      <input type="text" name="nama_keahlian[]" class="form-control">
-                      <label>Keterangan</label>
-                      <input type="text" name="keterangan[]" class="form-control">
-                      <br>
-                      <button class="btn btn-success add-more" type="button">
-                        <i class="glyphicon glyphicon-plus"></i> Add
-                      </button>
-                      <hr>
-                    </div> -->
-                    <!-- <button class="btn btn-success" type="tambah">Submit</button> -->
-                    <!-- </form> -->
 
-                    <!-- class hide membuat form disembunyikan  -->
-                    <!-- hide adalah fungsi bootstrap 3, klo bootstrap 4 pake invisible  -->
-                    <!-- <div class="copy hide">
-                    <div class="control-group col-4">
-                      <label>Nama Keahlian</label>
-                      <input type="text" name="nama_keahlian[]" class="form-control">
-                      <label>Keterangan</label>
-                      <input type="text" name="keterangan[]" class="form-control">
-                      <br>
-                      <button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
-                      <hr>
-                  </div>
-                </div> -->
-                    <div class="row gx-3 mb-3">
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;">nama keahlian :</label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian1" required value="<?= $keahlian['nama_keahlian']; ?>">
-
-                      </div>
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;">keterangan :</label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="keterangan1" required value="<?= $keahlian['keterangan']; ?>"></input>
-
-                      </div>
-
-                    </div>
-                    <div class="row gx-3 mb-3">
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;"></label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian2" required value="<?= $keahlian['nama_keahlian']; ?>">
-
-                      </div>
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;"></label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="keterangan2" required value="<?= $keahlian['keterangan']; ?>"></input>
-
-                      </div>
-
-                    </div>
-                    <div class="row gx-3 mb-3">
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;"></label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian3" required value="<?= $keahlian['nama_keahlian']; ?>">
-
-                      </div>
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;"></label>
-                        <input class="form-control" style="background-color: #bdc3c7;" name="keterangan3" required value="<?= $keahlian['keterangan']; ?>"></input>
-
-                      </div>
-
-                    </div>
-                  
-
-
-                  <br><br><br><br>
-
-
-                  <!-- Tabel Pendidikan -->
-                  <!-- Ukuran tabel -->
-                  
-                    <!-- End ukuran tabel -->
-
-                    <!-- Account details card-->
+                <div class="card-header" style="color:#fff ; background-color:#8E6AEB; font-weight: 900; padding-left:47%;">Keahlian</div>
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Nama Keahlian :</label>
+                    <?php for ($i = 0; $i < sizeof($keahlian); $i++) { ?>
                     
-                      <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Pendidikan</div>
+                      <p><input type="hidden" class="form-control" style="background-color: #bdc3c7;" name="id_keahlian[]" value="<?= $keahlian[$i]['id_keahlian']; ?>"></p>
+                      <p><input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian1[]" value="<?= $keahlian[$i]['nama_keahlian']; ?>"></p>
+                    <?php } ?>
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Keterangan :</label>
+                    <?php for ($i = 0; $i < sizeof($keahlian); $i++) { ?>
+                      <p><input class="form-control" style="background-color: #bdc3c7;" name="keterangan1[]" value="<?= $keahlian[$i]['keterangan']; ?>"></p>
+                    <?php } ?>
+                  </div>
+                </div>
+
+
+
+
+
+                <br><br><br><br><br><br><br>
+
+
+                <!-- Tabel Pendidikan -->
+                <!-- Ukuran tabel -->
+
+                <!-- End ukuran tabel -->
+
+                <!-- Account details card-->
+
+                <div class="card-header" style="color:#fff ; background-color:#8E6AEB; font-weight: 900; padding-left:46%; margin-top:50px;">Pendidikan</div>
+                <div class="row">
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Riwayat Pendidikan :</label>
+                    <?php for ($i = 0; $i < sizeof($pendidikan); $i++) { ?>
+                      <p><input type="hidden" class="form-control" style="background-color: #bdc3c7;" name="id_pendidikan[]" value="<?= $pendidikan[$i]['id_pendidikan']; ?>"></p>
+                      <p><input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan1[]" value="<?= $pendidikan[$i]['riwayat_pendidikan']; ?>"></p>
+                    <?php } ?>
+
+                  </div>
+                  <div class="col" style="padding-left: 50px;">
+                    <label class="small mb-1" style="font-weight: 900;">Nama Pendidikan :</label>
+                    <?php for ($i = 0; $i < sizeof($pendidikan); $i++) { ?>
                       
-
-
-                      <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">Riwayat Pendidikan :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan1" value="<?= $pendidikan['riwayat_pendidikan']; ?>" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">Nama Pendidikan :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan1" value="<?= $pendidikan['nama_pendidikan']; ?>" required></input>
-
-                    </div>
+                      <p><input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan1[]" value="<?= $pendidikan[$i]['nama_pendidikan']; ?>"></p>
+                    <?php } ?>
                   </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan2" value="<?= $pendidikan['riwayat_pendidikan']; ?>" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan2" value="<?= $pendidikan['nama_pendidikan']; ?>" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan3" value="<?= $pendidikan['riwayat_pendidikan']; ?>" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan3" value="<?= $pendidikan['nama_pendidikan']; ?>" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan4" value="<?= $pendidikan['riwayat_pendidikan']; ?>" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan4" value="<?= $pendidikan['nama_pendidikan']; ?>" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan5" value="<?= $pendidikan['riwayat_pendidikan']; ?>" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan5" value="<?= $pendidikan['nama_pendidikan']; ?>" required></input>
-
-                    </div>
-                  </div>
-
-                        <!-- <div class="row gx-3 mb-3">
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;">riwayat pendidikan :</label>
-
-
-                          </div>
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;">nama pendidikan :</label>
-                            <input class="form-control" name="nama_pendidikan[]" required value="">
-
-                          </div>
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="" style="font-weight: 900;">TK</label>
-                            <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;"></label>
-                            <input class="form-control" name="nama_pendidikan[]" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="" style="font-weight: 900;">SD</label>
-                            <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;"></label>
-                            <input class="form-control" name="nama_pendidikan[]" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="" style="font-weight: 900;">SMP</label>
-                            <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;"></label>
-                            <input class="form-control" name="nama_pendidikan[]" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="" style="font-weight: 900;">SMA/SMK</label>
-                            <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="small mb-1" style="font-weight: 900;"></label>
-                            <input class="form-control" name="nama_pendidikan[]" value="">
-
-                          </div>
-
-                          <div class="col-md-5" style="margin-left: 30px;">
-                            <label class="" style="font-weight: 900;">Perguruan Tinggi</label>
-                            <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                          </div>
-                        </div> -->
+                </div>
 
 
 
-                        <!-- <div class="col-12" style="margin-left:800px;"> -->
-                        <button class="btn btn-primary" type="submit" name="ubah" style="margin-right: 20px auto;">ubah data</button>
-                        <!-- </div> -->
+                <div class="col-12" style="margin-left: 30px;">
+                  <button class="btn btn-primary" type="submit" name="ubah">ubah data</button>
+                </div>
 
 
 
-                    
-                  
-                  <!-- End Tabel pendidikan -->
+
+
+                <!-- End Tabel pendidikan -->
 
             </form>
           </div>
@@ -462,7 +289,7 @@ if (isset($_POST['ubah'])) {
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
+      <script src="../assets/js/main.js"></script>
       <!-- fungsi javascript untuk menampilkan form dinamis  -->
       <!-- penjelasan :
 saat tombol add-more ditekan, maka akan memunculkan div dengan class copy -->

@@ -81,7 +81,7 @@ if (isset($_POST['tambah'])) {
 
       <div class="profile">
         <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" style="height: 120px;">
-        <h1 class="text-light"><a href="coba.php">Indrabro190</a></h1>
+        <h1 class="Japan" contenteditable="true"><a href="coba.php">Tambah Data</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -114,388 +114,202 @@ if (isset($_POST['tambah'])) {
         <div class="card-body" style="background-color:#34495e;">
           <form class="row g-3" action="" method="POST">
             <div class="row gx-3 mb-3">
-              <!-- Tabel Data Diri -->
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Masukkan Nama :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Nama" value="" required>
-
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Masukkan Nama :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Nama" value="" required>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Tempat :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Tempat" value="" required>
+                </div>
               </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Tempat :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Tempat" value="" required>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Tanggal lahir :</label>
+                  <input type="date" class="form-control" style="background-color: #bdc3c7;" name="Tgl_lahir" value="" required>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Jenis Kelamin :</label>
+                  <select class="form-select" style="background-color: #bdc3c7; padding:8px;" name="Jenis_Kelamin" required>
+                    <option selected disabled value="" style="font-size:12px;">Pilih</option>
+                    <option style="font-size: 12px;">Laki-laki</option>
+                    <option style="font-size: 12px;">Perempuan</option>
+                  </select>
 
+                </div>
               </div>
-            </div>
-
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Tgl lahir :</label>
-                <input type="date" class="form-control" style="background-color: #bdc3c7;" name="Tgl_lahir" value="" required>
-
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Gol Darah :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Gol_Darah" value="">
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Alamat :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Alamat" value="" required>
+                </div>
               </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Jenis Kelamin :</label>
-                <select class="form-select" style="background-color: #bdc3c7;" name="Jenis_Kelamin" required>
-                  <option selected disabled value="">Pilih</option>
-                  <option>Laki-laki</option>
-                  <option>Perempuan</option>
-                </select>
-
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">RT/RW :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="RT_RW" value="" required>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Kel/Desa :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Kel_Desa" value="" required>
+                </div>
               </div>
-            </div>
-
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Gol Darah :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Gol_Darah" value="">
-
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Kecamatan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Kecamatan" value="" required></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Agama :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Agama" value="" required>
+                </div>
               </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Alamat :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Alamat" value="" required>
-
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Status Perkawinan :</label>
+                  <select class="form-select" style="background-color: #bdc3c7; padding:8px;" name="Status_Perkawinan" required>
+                    <option selected disabled value="">Pilih</option>
+                    <option style="font-size: 12px;">Nikah</option>
+                    <option style="font-size: 12px;">Belum Nikah</option>
+                  </select>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Pekerjaan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Pekerjaan" value="" required>
+                </div>
               </div>
-            </div>
-
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">RT/RW :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="RT_RW" value="" required>
-
+              <div class="row">
+                <div class="col-6" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Kewarganegaraan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="Kewarganegaraan" value="" required>
+                </div>
               </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Kel/Desa :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Kel_Desa" value="" required>
+              <br><br><br><br><br><br><br><br><br><br>
 
-              </div>
-            </div>
+              <!-- Tabel keahlian -->
+              <!-- Ukuran tabel -->
 
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Kecamatan :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Kecamatan" value="" required></input>
-
-              </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Agama :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Agama" value="" required>
-
-              </div>
-            </div>
-
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Status Perkawinan :</label>
-                <select class="form-select" style="background-color: #bdc3c7;" name="Status_Perkawinan" required>
-                  <option selected disabled value="">Pilih</option>
-                  <option>Nikah</option>
-                  <option>Belum Nikah</option>
-                </select>
-
-              </div>
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Pekerjaan :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Pekerjaan" value="" required>
-
-              </div>
-            </div>
-
-            <div class="row gx-3 mb-3">
-              <div class="col-md-5" style="margin-left: 30px;">
-                <label class="small mb-1" style="font-weight: 900;">Kewarganegaraan :</label>
-                <input class="form-control" style="background-color: #bdc3c7;" name="Kewarganegaraan" value="" required>
-
-              </div>
-
-            </div>
-<br><br><br><br><br><br><br><br><br><br>
-
-            <!-- Tabel keahlian -->
-            <!-- Ukuran tabel -->
-            
               <!-- End ukuran tabel -->
 
               <!-- Account card-->
-              
-                <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Keahlian</div>
-                
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">Nama Keahlian :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian1" value="" required></input>
 
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">keterangan :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="keterangan1" value="" required></input>
+              <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Keahlian</div>
 
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian2" value="" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="keterangan2" value="" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian3" value="" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="keterangan3" value="" required></input>
-
-                    </div>
-                  </div>
-                
-              
-              <!-- membuat form  -->
-              <!-- gunakan tanda [] untuk menampung array  -->
-              <!-- <form action="proses.php" method="POST">
-                    <div class="control-group after-add-more col-4">
-                      <label>Nama Keahlian</label>
-                      <input type="text" name="nama_keahlian[]" class="form-control">
-                      <label>Keterangan</label>
-                      <input type="text" name="keterangan[]" class="form-control">
-                      <br>
-                      <button class="btn btn-success add-more" type="button">
-                        <i class="glyphicon glyphicon-plus"></i> Add
-                      </button>
-                      <hr>
-                    </div>
-                  </form> -->
-              <!-- <button class="btn btn-success" type="tambah">Submit</button> -->
-              <!-- </form> -->
-
-              <!-- class hide membuat form disembunyikan  -->
-              <!-- hide adalah fungsi bootstrap 3, klo bootstrap 4 pake invisible  -->
-              <!-- <div class="copy hide">
-                    <div class="control-group col-4">
-                      <label>Nama Keahlian</label>
-                      <input type="text" name="nama_keahlian[]" class="form-control">
-                      <label>Keterangan</label>
-                      <input type="text" name="keterangan[]" class="form-control">
-                      <br>
-                      <button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
-                      <hr>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Nama Keahlian :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian1" value="" required></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">keterangan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="keterangan1" value="" required></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian2" value="" required></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="keterangan2" value="" required></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_keahlian3" value="" required></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="keterangan3" value="" required></input>
+                </div>
+              </div>
 
 
-
-                    </div> Tabel Pendidikan -->
-            <br><br><br><br><br><br><br><br>
-            <!-- Ukuran tabel -->
+              <!--Tabel Pendidikan -->
+              <br><br><br><br><br><br><br><br>
+              <!-- Ukuran tabel -->
               <!-- End ukuran tabel -->
 
               <!-- Account details card-->
-              
-                <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Pendidikan</div>
-                
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">Riwayat Pendidikan :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan1" required></input>
 
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">Nama Pendidikan :</label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan1" required></input>
+              <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Pendidikan</div>
 
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan2" required></input>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Riwayat Pendidikan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan1"></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;">Nama Pendidikan :</label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan1"></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan2"></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan2"></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan3"></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan3"></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan4"></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan4"></input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan5"></input>
+                </div>
+                <div class="col" style="padding-left: 50px;">
+                  <label class="small mb-1" style="font-weight: 900;"></label>
+                  <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan5"></input>
+                </div>
+              </div>
 
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan2" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan3" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan3" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan4" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan4" required></input>
-
-                    </div>
-                  </div>
-                  <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="riwayat_pendidikan5" required></input>
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" style="background-color: #bdc3c7;" name="nama_pendidikan5" required></input>
-
-                    </div>
-                  </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit" name="tambah">tambah data</button>
+              </div>
 
 
-                  <!-- membuat form  -->
-                  <!-- gunakan tanda [] untuk menampung array  -->
-                  <!-- <form action="proses.php" method="POST"> -->
-                  <!-- <div class="control-group after-add col-4">
-                          <label>TK</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SD</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SMP</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SMA/SMK</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>Perguruan Tinggi</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <br>
-                          <button class="btn btn-success add-more" type="button">
-                            <i class="glyphicon glyphicon-plus"></i> Add
-                          </button>
-                          <hr>
-                        </div> -->
-                  <!-- <button class="btn btn-success" type="tambah">Submit</button> -->
-                  <!-- </form> -->
-
-                  <!-- class hide membuat form disembunyikan  -->
-                  <!-- hide adalah fungsi bootstrap 3, klo bootstrap 4 pake invisible  -->
-                  <!-- <div class="copy hide">
-                          <div class="control-group col-4">
-                          <label>TK</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SD</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SMP</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>SMA/SMK</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                          <label>Perguruan Tinggi</label>
-                          <input type="text" name="nama_pendidikan[]" class="form-control">
-                            <br>
-                            <button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
-                            <hr>
-
-
-
-                          </div>
-                        </div> -->
-
-
-
-                  <!-- tabel pendidikan yang bisa -->
-                  <!-- <div class="row gx-3 mb-3">
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">riwayat pendidikan :</label>
-
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;">nama pendidikan :</label>
-                      <input class="form-control" name="nama_pendidikan" value="">
-
-                    </div>
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="" style="font-weight: 900;">TK</label>
-                      <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" name="nama_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="" type="hidden" style="font-weight: 900;">SD</label>
-                      <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" name="nama_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="" type="hidden" style="font-weight: 900;">SMP</label>
-                      <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" name="nama_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="" type="hidden" style="font-weight: 900;">SMA/SMK</label>
-                      <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="small mb-1" style="font-weight: 900;"></label>
-                      <input class="form-control" name="nama_pendidikan" value="">
-
-                    </div>
-
-                    <div class="col-md-5" style="margin-left: 30px;">
-                      <label class="" type="hidden" style="font-weight: 900;">Perguruan Tinggi</label>
-                      <input class="form-control" type="hidden" name="riwayat_pendidikan" value="">
-
-                    </div>
-                  </div> -->
-
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit" name="tambah">tambah data</button>
-                  </div>
-
-                
-                <!-- End Tabel pendidikan -->
-
+              <!-- End Tabel pendidikan -->
+            </div>
           </form>
         </div>
       </div>
     </div>
+    </div>
 
     <!-- End Tabel Data Diri -->
-    <br><br><br><br><br><br>
-
 
 
 
     <!-- End Tabel keahlian -->
-
-    <br><br><br><br><br><br><br>
 
 
 
@@ -536,17 +350,3 @@ saat tombol add-more ditekan, maka akan memunculkan div dengan class copy -->
 </body>
 
 </html>
-
-<!-- <div class="row gx-3 mb-3">
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;">nama keahlian :</label>
-                        <input class="form-control" name="nama_keahlian" value="" required>
-
-                      </div>
-                      <div class="col-md-5" style="margin-left: 30px;">
-                        <label class="small mb-1" style="font-weight: 900;">keterangan :</label>
-                        <input class="form-control" name="keterangan" value="" required>
-
-                      </div>
-
-                    </div> -->

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Font Japan";
+    src: url('../font/To\ Japan.ttf');
+    }
+
+.Japan {
+    font-family: "Font Japan";
+}
+
+
+
 body{
     margin-top: 0;
     margin-left: 0;

@@ -17,322 +17,269 @@ $pendidikan = query("SELECT riwayat_pendidikan,nama_pendidikan FROM pendidikan W
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>CV DataKaryawan</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>CV DataKaryawan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="../CSS/detail.css">
-    <!-- End Of My CSS -->
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../CSS/detail.css">
+  <!-- End Of My CSS -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <!-- Vendor CSS Files -->
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <!-- CSS bootstrap detail -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <!-- End CSS bootstrap detail -->
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- CSS bootstrap detail -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <!-- End CSS bootstrap detail -->
+
+  <script src="jquery.min.js" type="text/javascript"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="keahlian.js"></script>
+
 
 
 </head>
 
-<body>
+<body style="background-color:#f1f2f6;">
 
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="d-flex flex-column">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-            <div class="profile">
-                <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" style="height: 120px;">
-                <h1 class="text-light"><a href="coba.php">Indrabro190</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-                </div>
+      <div class="profile">
+        <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" style="height: 120px;">
+        <h1 class="Japan" contenteditable="true"><a href="coba.php">Detail Data</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar" style="font-weight:900;">
+        <ul>
+          <li><a href="coba.php" class="nav-link"><i class="bx bx-arrow-back"></i>Kembali</a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <main id="main">
+
+<br><br><br><br>
+    <!-- Ukuran tabel -->
+    <div class="col-xl-9" style="margin-left: 125px; margin:auto;">
+      <!-- End ukuran tabel -->
+
+      <!-- Account details card-->
+      <div class="card mb-4" style="box-shadow: 1px 2px 5px black; ">
+        <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:10px;">Detail Data-Diri</div>
+        <div class="card-body" style="background-color:#15262D;">
+          <form class="row g-3 col-15" action="" method="POST">
+            <div class="row gx-3 mb-3">
+              <!-- Tabel Data Diri -->
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Nama :</span></label>
+                <p><?= $m['Nama']; ?></p>
+
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Tempat :</span></label>
+                <p style="padding-left:80px;"><?= $m['Tempat']; ?></p>
+
+              </div>
             </div>
 
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Tgl lahir :</span></label>
+                <p><?= $m['Tgl_lahir']; ?></p>
 
-                    <li><a href="coba.php" class="nav-link"><i class="bx bx-arrow-back"></i> <span>Kembali</span></a></li>
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Jenis Kelamin :</span></label>
+                <p style="padding-left:80px;"><?= $m['Jenis_Kelamin']; ?></p>
 
-                </ul>
-            </nav><!-- .nav-menu -->
+              </div>
+            </div>
+
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Gol Darah :</span></label>
+                <p><?= $m['Gol_Darah']; ?></p>
+
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Alamat :</span></label>
+                <p style="padding-left:80px;"><?= $m['Alamat']; ?></p>
+
+              </div>
+            </div>
+
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>RT/RW :</span></label>
+                <p><?= $m['RT_RW']; ?></p>
+
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Kel/Desa :</span></label>
+                <p style="padding-left:80px;"><?= $m['Kel_Desa']; ?></p>
+
+              </div>
+            </div>
+
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Kecamatan :</span></label>
+                <p><?= $m['Kecamatan']; ?></p>
+
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Agama :</span></label>
+                <p style="padding-left:80px;"><?= $m['Agama']; ?></p>
+              </div>
+            </div>
+
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Status Perkawinan :</span></label>
+                <p><?= $m['Status_Perkawinan']; ?></p>
+
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Pekerjaan :</span></label>
+                <p style="padding-left:80px;"><?= $m['Pekerjaan']; ?></p>
+
+              </div>
+            </div>
+
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Kewarganegaraan :</span></label>
+                <p><?= $m['Kewarganegaraan']; ?></p>
+
+              </div>
+
+            </div>
+            <br><br><br>
+
+            <!-- Tabel keahlian -->
+            <!-- Ukuran tabel -->
+
+            <!-- End ukuran tabel -->
+
+            <!-- Account card-->
+
+            <!-- <div class="card-header bg-secondary" style="color:#fff ; font-weight: 900; padding-left:41%;">Keahlian</div> -->
+            <hr>
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Nama Keahlian :</span></label>
+                <?php for ($i = 0; $i < sizeof($keahlian); $i++) { ?>
+                 <p><?= $keahlian[$i]['nama_keahlian']; ?></p>
+                <?php } ?>
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>keterangan :</span></label>
+                <?php for ($i = 0; $i < sizeof($keahlian); $i++) { ?>
+                  <p style="padding-left:80px;"><?= $keahlian[$i]['keterangan']; ?></p>
+                <?php } ?>
+              </div>
+            </div>
+
+
+            <br><br><br><br><br>
+            <!-- Ukuran tabel -->
+            <!-- End ukuran tabel -->
+
+            <!-- Account details card-->
+
+            <!-- <div class="card-header bg-info" style="color:#fff ; font-weight: 900; padding-left:41%;">Pendidikan</div> -->
+              <hr>
+            <div class="row gx-3 mb-3">
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900;"><span>Riwayat Pendidikan :</span></label>
+                <?php for ($i = 0; $i < sizeof($pendidikan); $i++) { ?>
+                  <p><?= $pendidikan[$i]['riwayat_pendidikan']; ?></p>
+                <?php } ?>
+              </div>
+              <div class="col-md-5" style="margin-left: 30px;">
+                <label class="small mb-1" style="font-weight: 900; padding-left:80px;"><span>Nama Pendidikan :</span></label>
+                <?php for ($i = 0; $i < sizeof($pendidikan); $i++) { ?>
+                  <p style="padding-left:80px;"><?= $pendidikan[$i]['nama_pendidikan']; ?></p>
+                <?php } ?>
+              </div>
+            </div>
+
+
+            <!-- End Tabel pendidikan -->
+
+          </form>
         </div>
-    </header><!-- End Header -->
+      </div>
+    </div>
 
+    <!-- End Tabel Data Diri -->
+    <br><br><br><br><br><br>
 
 
-    <main id="main">
 
-        <!-- ======= Daftar Karyawan Section ======= -->
-        <!-- <section id="detail" class="detail"> -->
-        <div class="card">
 
-            <!-- <div class="section-title"> -->
-            <!-- <h2>Detail Karyawan</h2> -->
-            <form action="coba.php" method="POST">
+    <!-- End Tabel keahlian -->
 
-                <div class="container">
-                    <div class="team-single">
 
-                        <div class="row">
-                            <div class="container-xl px-4 mt-4">
-                                <!-- Account page navigation-->
 
-                                <!-- <hr class="mt-0 mb-4">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        Profile picture card
-                                        <div class="card mb-4 mb-xl-0">
-                                            <div class="card-header">Profile Picture</div>
-                                            <div class="card-body text-center">
-                                                Profile picture image
-                                                <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                                                Profile picture help block
-                                                <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                                                Profile picture upload button
-                                                <button class="btn btn-primary" type="button">Upload new image</button>
-                                            </div>
-                                        </div>
-                                    </div> -->
 
-                                <!-- Ukuran tabel -->
-                                <div class="col-xl-11" style="justify-content: center; align-items:center; margin:auto;">
-                                    <!-- End ukuran tabel -->
 
-                                    <!-- Account details card-->
-                                    <div class="card mb-4">
-                                        <div class="card-header bg-dark" style="color:#fff ; font-weight: 900;">Detail Karyawan</div>
-                                        <div class="card-body">
-                                            <form>
-                                                <!-- Form Group (username)-->
-                                                <div class="pertama">
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color: red;">Nama :</label> -->
-                                                            <label class="">Nama : <span><?= $m['Nama']; ?></span></label>
-                                                        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-                                                        <!-- Form Row-->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-
-                                                    </div>
-                                                    <!-- Form Group (last name)-->
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color: green ;">Tgl lahir</label> -->
-                                                            <label class="">Tempat : <span><?= $m['Tempat']; ?></span></label>
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#3B3B98 ;">Gol Darah :</label> -->
-                                                            <label class="">Tgl lahir : <span><?= $m['Tgl_lahir']; ?></span></label>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#6ab04c ;">RT/RW :</label> -->
-                                                            <label class="">Jenis Kelamin : <span><?= $m['Jenis_Kelamin']; ?></span></label>
-
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#12CBC4 ;">Kecamatan</label> -->
-                                                            <label class="">Gol Darah : <span><?= $m['Gol_Darah']; ?></span></label>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Status_Perkawinan</label> -->
-                                                            <label class="">Alamat : <span><?= $m['Alamat']; ?></span></label>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="geser">
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#833471 ;">Kewarganegaraan</label> -->
-                                                                <label class="">RT/RW : <span><?= $m['RT_RW']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#1B1464 ;">Keterangan</label> -->
-                                                                <label class="">Kel/Desa : <span><?= $m['Kel_Desa']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                                <label class="">Kecamatan : <span><?= $m['Kecamatan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Agama : <span><?= $m['Agama']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Status Perkawinan : <span><?= $m['Status_Perkawinan']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Pekerjaan : <span><?= $m['Pekerjaan']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Kewarganegaraan : <span><?= $m['Kewarganegaraan']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Nama Keahlian :<span><?= $keahlian['nama_keahlian']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Keterangan :<span><?= $keahlian['keterangan']; ?></span></label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row gx-3 mb-3">
-                                                        <div class="col-md-5" style="margin-left: 30px;">
-                                                            <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                            <label class="">Riwayat Pendidikan :</label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="geser">
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#833471 ;">Kewarganegaraan</label> -->
-                                                                <label class="">TK: <span><?= $pendidikan['nama_pendidikan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#1B1464 ;">Keterangan</label> -->
-                                                                <label class="">SD : <span><?= $pendidikan['nama_pendidikan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                                <label class="">SMP : <span><?= $pendidikan['nama_pendidikan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                                <label class="">SMA/SMK : <span><?= $pendidikan['nama_pendidikan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row gx-3 mb-3">
-                                                            <div class="col-md-5" style="margin-left: 30px;">
-                                                                <!-- <label class="small mb-1" style="font-weight: 900; color:#5758BB ;">Keahlian</label> -->
-                                                                <label class="">Perguruan Tinggi : <span><?= $pendidikan['nama_pendidikan']; ?></span></label>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-
-
-                                                </div>
-
-                                            
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-            </form>
-
-        </div>
-
-        <!-- End Daftar Karyawan Section -->
-        <!-- End Tabel keahlian -->
-
-        <br><br><br><br><br><br><br>
-
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

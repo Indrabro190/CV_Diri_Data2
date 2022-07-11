@@ -64,7 +64,7 @@ if (isset($_POST["Search"])) {
 
       <div class="profile">
         <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" style="height: 120px;">
-        <h1 class="text-light"><a href="coba.php">Indrabro190</a></h1>
+        <h1 contenteditable="true" class="Japan"><a href="coba.php">Biodata Diri</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -86,13 +86,13 @@ if (isset($_POST["Search"])) {
   </header><!-- End Header -->
 
 
-  <main id="main">
+  <main id="main" style="background-color: #060c21;">
 
     <!-- ======= Hero Section ======= -->
     <div id="hero" class="d-flex flex-column justify-content-center align-items-center bg-info" data-aos="fade-in" style="height: 720px ; color:#fff;">
       <h1>Hallo,Selamat Datang</h1>
 
-      <p><span class="typed" data-typed-items="di Website ini,Silahkan Isi Daftar Dibawah"></span></p>
+      <p><span class="typed" data-typed-items="di Website ini,Silahkan lihat-lihat"></span></p>
     </div>
     <!-- End Hero -->
 
@@ -102,43 +102,46 @@ if (isset($_POST["Search"])) {
       <div class="container" style="margin-top: 20px">
         <div class="row">
           <div class="col-md-12">
-            <h2 style="text-align: center;margin-bottom: 30px; font-weight:900; font-size:50px;">Biodata Diri</h2>
+            <h2 class="Japan" style="text-align: center; margin-bottom: 30px; font-weight:900; font-size:30px; color:#D7CD12; text-shadow: 2px 2px 2px #fff;">BIO<span>DATA</span> <strong>DIRI</strong></h2>
             <!-- tombol tambah data -->
-            <button id="button"><i class="bx bxs-user-plus"></i><a href="tambah.php">Tambah Data</a></button>
+            <!-- <button id="button" class="custom-btn-2 btn-9-2"><i class="bx bxs-user-plus"></i><a href="tambah.php">Tambah</a></button> -->
+            <div id="Tombol">
+              <a href="tambah.php" style="--clr:#ff1867"><span>Tambah</span><i></i></a>
+            </div>
             <!-- end tombol tambah data -->
             <form class="d-flex" action="" method="POST" style="width: 30%;">
               <input class="form-control me-2" type="search" name="keyword" placeholder="Search" autofocus autocomplete="off">
-              <button class="btn btn-outline-success" type="submit" name="Search">Search</button>
+              <button class="btn btn-outline-danger" type="submit" name="Search">Search</button>
             </form>
             <br>
-            <table class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <table class="table table-striped table-bordered" cellspacing="0" width="100%" style="margin:auto;">
               <thead>
-                <tr style="background-color: #3498db;">
+                <tr style="background-color: #AC6FFF;">
                   <th style="text-align:center ;">No</th>
                   <!-- <th style="text-align:center ;">id</th> -->
                   <th style="text-align:center ;">Nama</th>
                   <th style="text-align:center ;">Tempat</th>
                   <th style="text-align:center ;">Tgl_lahir</th>
-                  <th style="text-align:center ;">Jenis_Kelamin</th>
-                  <th style="text-align:center ;">Gol_Darah</th>
-                  <th style="text-align:center ;">Alamat</th>
+
+
+
 
                   <th colspan="2" style="text-align:center ;">Aksi</th>
                 </tr>
               </thead>
               <tbody>
                 <?php $i = 1;
-                
+
                 foreach ($biodata as $m) : ?>
                   <tr align="center">
-                    <td style="text-align:center ;"><?= $i++; ?></td>
-                    
-                    <td style="text-align:center ;"><?= $m['Nama']; ?></td>
-                    <td style="text-align:center ;"><?= $m['Tempat']; ?></td>
-                    <td style="text-align:center ;"><?= $m['Tgl_lahir']; ?></td>
-                    <td style="text-align:center ;"><?= $m['Jenis_Kelamin']; ?></td>
-                    <td style="text-align:center ;"><?= $m['Gol_Darah']; ?></td>
-                    <td style="text-align:center ;"><?= $m['Alamat']; ?></td>
+                    <td style="text-align:center ; color:#fff; font-weight:900;"><?= $i++; ?></td>
+
+                    <td style="text-align:center ; color:#fff; font-weight:900;"><?= $m['Nama']; ?></td>
+                    <td style="text-align:center ; color:#fff; font-weight:900;"><?= $m['Tempat']; ?></td>
+                    <td style="text-align:center ; color:#fff; font-weight:900;"><?= $m['Tgl_lahir']; ?></td>
+
+
+
                     <td align="center">
                       <button type="button" class="btn btn-primary"><a href="ubah.php?id=<?= $m['id_utama']; ?>"><i class="bx bxs-calendar-edit" style="color: #fff;"></i></a></button>
                       |
@@ -166,11 +169,11 @@ if (isset($_POST["Search"])) {
     <br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="skills section">
       <div class="container">
 
         <div class="section-title">
-          <h2 style="color: black; font-weight:900;">Skills</h2>
+          <h2 class="Japan" style="color:#D7CD12; font-weight:900; text-shadow: 2px 2px 2px #fff;">Skills</h2>
 
         </div>
 
@@ -179,7 +182,7 @@ if (isset($_POST["Search"])) {
           <div class="col-lg-6" data-aos="fade-up">
 
             <div class="progress">
-              <span class="skill" style="color: black; font-size:15px;">HTML <i class="val">80%</i></span>
+              <span class="skill" style="color: #fff; font-size:15px;">HTML <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -187,7 +190,7 @@ if (isset($_POST["Search"])) {
             </div>
 
             <div class="progress">
-              <span class="skill" style="color: black; font-size:15px;">CSS <i class="val">75%</i></span>
+              <span class="skill" style="color: #fff; font-size:15px;">CSS <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -195,7 +198,7 @@ if (isset($_POST["Search"])) {
             </div>
 
             <div class="progress">
-              <span class="skill" style="color: black; font-size:15px;">JavaScript <i class="val">35%</i></span>
+              <span class="skill" style="color: #fff; font-size:15px;">JavaScript <i class="val">35%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -207,7 +210,7 @@ if (isset($_POST["Search"])) {
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
             <div class="progress">
-              <span class="skill" style="color: black; font-size:15px;">PHP <i class="val">40%</i></span>
+              <span class="skill" style="color: #fff; font-size:15px;">PHP <i class="val">40%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -215,7 +218,7 @@ if (isset($_POST["Search"])) {
             </div>
 
             <div class="progress">
-              <span class="skill" style="color: black; font-size:15px;">Photoshop <i class="val">60%</i></span>
+              <span class="skill" style="color: #fff; font-size:15px;">Photoshop <i class="val">60%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -236,28 +239,26 @@ if (isset($_POST["Search"])) {
       <div class="container">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <h2 class="Japan" style="color:#D7CD12; text-shadow: 2px 2px 2px #fff;">Services</h2>
+          <p>Pusat bantuan untuk kalian yang ingin mengajukan sebuah kendala yang dialami pada website ini.kalian bisa pilih opsi dibawah untuk menghubungi kami.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <h4 class="title"><a href="#" style="color: #fff; text-shadow: 2px 2px 2px black;">Lorem Ipsum</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
               occaecati cupiditate non provident</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <h4 class="title"><a href="#" style="color: #fff; text-shadow: 2px 2px 2px black;">Dolor Sitema</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat tarad limino ata</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <h4 class="title"><a href="#" style="color: #fff; text-shadow: 2px 2px 2px black;">Sed ut perspiciatis</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur</p>
           </div>
@@ -289,9 +290,9 @@ if (isset($_POST["Search"])) {
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
-  
-  
-  
+
+
+
 
 </body>
 

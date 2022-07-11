@@ -125,3 +125,74 @@ body {
         width: 300px;
     }
 }
+.custom-btn {
+    max-width: 140px;
+    max-height: 35px;
+    padding: 10px 25px;
+    border: 2px solid #224B5C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 40px;
+    color:#224B5C;
+  }
+  .custom-btn-2 {
+    max-width: 140px;
+    max-height: 35px;
+    padding: 10px 25px;
+    border: 2px solid #224B5C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 40px;
+    color:#ffffff;
+    background: #224B5C;
+  }
+  
+  .btn-9-2 {
+    display: inline-block;
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-9-2:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  .btn-9-2:hover {
+    /* box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.267),
+                -4px -4px 6px 0 rgba(116, 125, 136, 0.11), 
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.185),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, 0.137); */
+    color: #224B5C;
+    background: rgba(255, 255, 255, 0);
+    font-weight: 600;
+  }
+  .btn-9-2:hover:after {
+    transform: scale(2) rotate(-180deg) ;
+    background: rgba(255, 255, 255, 0);
+    box-shadow:  4px 4px 6px 0 #224b5c98,
+                -4px -4px 6px 0 #224b5c96, 
+      inset -4px -4px 6px 0 #224b5cab,
+      inset 4px 4px 6px 0 #224b5c8f;
+  }
